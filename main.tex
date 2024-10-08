@@ -1,0 +1,71 @@
+\documentclass[10pt,GBK,UTF8]{article}
+\usepackage{setspace}
+\setstretch{1.2} %行间距
+% \usepackage{natbib}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{bm}
+% \usepackage{rotating}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{arydshln}
+\usepackage{geometry}
+\geometry{a4paper, scale=0.8}
+\usepackage{lscape}
+\usepackage{subfigure}
+\usepackage{booktabs}
+\usepackage{appendix}
+\usepackage{subfig}
+\usepackage{graphicx} 
+\usepackage{caption}
+\usepackage{float}  
+\usepackage{color, xcolor}
+% \usepackage[figuresright]{rotating}
+%\usepackage{soul}
+\usepackage[]{hyperref}
+\usepackage{nicematrix}
+\usepackage{lineno}
+\usepackage{blindtext}
+\usepackage{authblk} % 作者
+
+\newcommand{\CGB}[1]{\textcolor{purple}{[CGB:#1]}}
+
+\makeatletter
+\newenvironment{figurehere}
+{\def\@captype{figure}}
+{}
+\makeatletter
+\linenumbers 
+
+\geometry{a4paper,scale=0.7}
+\NiceMatrixOptions{cell-space-limits = 2pt}
+
+\renewcommand*{\Affilfont}{\small\it} % 修改机构名称的字体与大小
+\renewcommand\Authands{ and } % 去掉 and 前的逗号
+\date{} % 去掉日期
+
+
+\title{SuperGWAMA}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+\section{abstract}
+
+\section{Introduction}
+The very original source of the article can be found in \cite{Niu2017, Chen2017, He2024}, or as recently reviewed by \cite{Kontou2024}.
+
+\section{Methods}
+\section{Discussion}
+\clearpage
+\bibliography{sGWAMA}
+\bibliographystyle{naturemag}
+
+\end{document}
